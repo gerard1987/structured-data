@@ -1,0 +1,8 @@
+{
+	"name" : "advanza_structured_data",
+	"version" : "1.2",
+	"download_url" : "https://advandm297.297.axc.nl/files/advanza-structured-data-1.2.zip",
+	"sections" : {
+		"description" : "Generates a Json file with dynamic based data, from url. retrieves meta data from Yoast and social media from jetpack database. [Update to fix header message and restructured code || Added automatic yoast meta data || Bug fix with empty meta_data, and empty .docx] || Added support for site titel || Removed logo photon cache"
+	}
+}
