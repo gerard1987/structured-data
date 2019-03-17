@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name:  Advanza structured data
-Plugin URI:   http://www.waydesign.nl/plugins
+Plugin Name:  structured data
+Plugin URI:   https://github.com/gerard1987/structured-data
 Description:  Generates a Json file with dynamic based data, from url. retrieves meta data from Yoast and social media from jetpack database
 Version:      1.2
 Author:       Gerard de way
-Author URI:   http://www.waydesign.nl
+Author URI:   https://github.com/gerard1987/structured-data
 Text Domain:  wporg
 Domain Path:  /languages
 */
@@ -13,9 +13,9 @@ Domain Path:  /languages
 // Plugin updater
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://advandm297.297.axc.nl/api/advanza-structured-data.json',
+	'https://github.com/gerard1987/structured-data.structured-data.zip',
 	__FILE__,
-	'advanza_structured_data_updater'
+	'structured_data_updater'
 );
 
 // Define global constants
@@ -41,7 +41,7 @@ class advanza_structured_data
      * Create Json data in the footer, strip url for Json location information.
      * Import Yoast meta data and Jetpack social media data from classes
      */
-    function advanza_structured_data(){
+    function structured_data(){
         // Build Json file
         $data = '{
             "@context": "http:\/\/schema.org",
@@ -111,7 +111,7 @@ class advanza_structured_data
 
 // Declare instances
 
-$advanza_structured_data = new advanza_structured_data();
+$structured_data = new structured_data();
 
 // Report simple running errors
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
